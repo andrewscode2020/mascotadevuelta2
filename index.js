@@ -32,5 +32,5 @@ app.use('/petreports', petReportPath)
 app.use('/pet_pics', express.static('pet_pic'))
 
 app.listen(PORT, () => {
-  console.log('Aplicación corriendo en http://localhost:3000')
+  console.log(`Aplicación corriendo en http://localhost:${PORT}`)
 })
