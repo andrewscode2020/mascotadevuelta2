@@ -6,5 +6,5 @@ mongoose.connect(MONGODB, { useNewUrlParser: true, useUnifiedTopology: true, use
 const db = mongoose.connection
 db.on('error', console.error.bind(console, 'Error de conección:'))
 db.once('open', function () {
-  console.log('Conexión exitosa con la base de datos MongoDB.')
+  console.log(`Conexión exitosa con la base de datos MongoDB:\n${MONGODB}`)
 })
